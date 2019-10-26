@@ -1,0 +1,56 @@
+/* social bar */
+
+.social-content-container {
+  position: relative;
+  margin: auto;
+}
+
+.social-bar {
+  position: relative;
+  height: fit-content;
+}
+
+.social-icon-container {
+  width: fit-content;
+  margin: auto;
+  position: relative;
+  display: flex;
+  height: fit-content;
+}
+
+.social-icon {
+  height: 4em;
+  width: 4em;
+  padding-left: 1em;
+}
+
+.social-icon > .fa {
+  position: relative;
+  color: #e5e5e5;
+  font-size: 2.2em;
+  display: block;
+  transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+}
+
+.fa:hover {
+  color: #fff;
+}
+
+.fa.fa-twitter:hover {
+  color: #5bbcec;
+}
+.fa.fa-linkedin:hover {
+  color: #0077b5;
+}
+.fa.fa-github:hover {
+  color: #6e5494;
+}
+
+.fa.fa-envelope:hover {
+  color: #767676;
+}
+
+/* social bar */

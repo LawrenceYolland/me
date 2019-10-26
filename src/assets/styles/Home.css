@@ -1,0 +1,27 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 5em;
+}
+
+.home-container h1 {
+  font-family: Rubik, Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+    Sans-Serif;
+  color: whitesmoke;
+}
+
+.home-image-container {
+  position: relative;
+  display: flex;
+  width: 10em;
+  height: 10em;
+}
+
+.home-image-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
