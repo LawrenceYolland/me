@@ -1,4 +1,63 @@
-.App {
-  text-align: center;
+@media (min-width: 768px) {
+  .container-1 {
+    display: flex;
+  }
 }
 
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 5em;
+}
+
+.home-container h1 {
+  font-family: Rubik, Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma,
+    Sans-Serif;
+    color: whitesmoke;
+}
+
+.home-image-container {
+  position: relative;
+  display: flex;
+  width: 10em;
+  height: 10em;
+}
+
+.home-image-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.container-1 {
+  /* flex-wrap: wrap; */
+}
+
+.container-1 div {
+  padding: 1rem;
+}
+
+.box-1 {
+  flex: 1;
+  order: 1;
+}
+
+.box-2 {
+  flex: 1;
+  order: 2;
+}
+
+.box-3 {
+  flex: 1;
+  order: 3;
+}
+
+div[class^="box-"] {
+  margin: 0.5em;
+  border-radius: 5px;
+  /* box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.1); */
+  text-align: center;
+}
