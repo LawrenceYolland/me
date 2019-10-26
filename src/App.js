@@ -1,16 +1,19 @@
 import React, { Component, Fragment } from "react";
 import "./App.css";
 import Home from "./components/Home";
-import SocialBar from "./components/SocialBar";
-class App extends Component {
+import DayNight from "./components/DayNight";
+
+export default class App extends Component {
+  dayNight = e => {
+    console.log("day night ☀️ 🌑");
+  };
+
   render() {
     return (
       <Fragment>
+        <DayNight dayNight={this.dayNight} />
         <Home />
-        <SocialBar />
       </Fragment>
     );
   }
 }
-
-export default App;
