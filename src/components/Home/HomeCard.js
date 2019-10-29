@@ -9,8 +9,6 @@ const HomeCard = ({ mode }) => {
     <div className="home-container">
       <div className="home-image-container">
         <img src={require("../../assets/images/headshot.jpg")} alt="headshot" />
-
-        {/* <img src={require("../assets/images/headshot.jpg")} alt="headshot" /> */}
       </div>
       <h1>Dr Lawrence Yolland</h1>
       <p>
