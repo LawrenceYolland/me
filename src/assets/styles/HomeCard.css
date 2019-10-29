@@ -1,0 +1,40 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 5em;
+}
+
+.home-image-container {
+  position: relative;
+  display: flex;
+  width: 10em;
+  height: 10em;
+}
+
+.home-image-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.text-link {
+  color: #282c34;
+  font-size: 90%;
+  padding: 0.2rem 0.3rem 0.2rem;
+  background: linear-gradient(
+    to right,
+    rgba(249, 170, 0, 0.2),
+    rgba(249, 0, 154, 0.2)
+  );
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin: 0 0.2em 0 0.2em;
+}
+
+.text-link.Dark:link,
+.text-link.Dark:visited {
+  background-color: aquamarine;
+}
