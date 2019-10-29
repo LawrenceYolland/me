@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-
+import { Route, Switch } from "react-router-dom";
 import "./App.css";
-import Home from "./components/Home";
+import Home from "./components/Home/Home";
+import Research from "./components/Research/Research";
+
 import DayNight from "./components/DayNight";
 
 class App extends Component {
@@ -11,7 +13,10 @@ class App extends Component {
     return (
       <div className={"App" + " " + screenMode}>
         <DayNight />
-        <Home />
+        <Switch>
+          <Route exact path="/" render={() => <Home />}></Route>
+          <Route exact path="/research" render={() => <Research />}></Route>
+        </Switch>
       </div>
     );
   }
