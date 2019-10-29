@@ -15,8 +15,8 @@ class App extends Component {
         <DayNight />
         {/* <Home /> */}
         <Switch>
-          <Route exact path="/" render={() => <Home />} />
-          <Route exact path="/research" render={() => <Research />} />
+          <Route exact path="/me/" render={() => <Home />} />
+          <Route exact path="/me/research" render={() => <Research />} />
         </Switch>
       </div>
     );
