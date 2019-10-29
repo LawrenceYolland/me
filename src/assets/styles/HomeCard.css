@@ -7,12 +7,6 @@
   margin-top: 5em;
 }
 
-.home-container h1 {
-  font-family: Rubik, Lato, "Lucida Grande", "Lucida Sans Unicode", Tahoma,
-    Sans-Serif;
-  color: whitesmoke;
-}
-
 .home-image-container {
   position: relative;
   display: flex;

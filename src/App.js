@@ -1,19 +1,29 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
+import { connect } from "react-redux";
+
 import "./App.css";
 import Home from "./components/Home";
 import DayNight from "./components/DayNight";
 
-export default class App extends Component {
-  dayNight = e => {
-    console.log("day night ☀️ 🌑");
-  };
-
+class App extends Component {
   render() {
+    const screenMode = this.props.mode ? "Dark" : "Light";
     return (
-      <Fragment>
-        <DayNight dayNight={this.dayNight} />
+      <div className={"App" + " " + screenMode}>
+        <DayNight />
         <Home />
-      </Fragment>
+      </div>
     );
   }
 }
+
+const mapStateToProps = state => {
+  return {
+    mode: state.mode.mode
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  null
+)(App);

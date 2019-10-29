@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import setMode from "./daynight";
+import mode from "./daynight";
 
 export default combineReducers({
-  setMode
+  mode
 });
