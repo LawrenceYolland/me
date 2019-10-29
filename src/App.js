@@ -13,10 +13,11 @@ class App extends Component {
     return (
       <div className={"App" + " " + screenMode}>
         <DayNight />
-        <Switch>
+        <Home />
+        {/* <Switch>
           <Route exact path="/" render={() => <Home />} />
           <Route exact path="/research" render={() => <Research />} />
-        </Switch>
+        </Switch> */}
       </div>
     );
   }
