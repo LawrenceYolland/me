@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 import "./App.css";
 import Home from "./components/Home/Home";
 import Research from "./components/Research/Research";
@@ -32,4 +32,4 @@ const mapStateToProps = state => {
 export default connect(
   mapStateToProps,
   null
-)(App);
+)(withRouter(App));
