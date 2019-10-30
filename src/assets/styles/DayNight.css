@@ -1,9 +1,12 @@
 .daynight-switch {
-  position: fixed;
-  bottom: 5em;
+  position: absolute;
+  z-index: 999;
+  /* bottom: 2em; */
   display: inline-block;
   width: 4em;
   height: 4em;
+
+  /* bottom: 2em; */
 }
 
 .daynight-switch input {

@@ -16,11 +16,12 @@ class App extends Component {
 
     return (
       <div className={"App" + " " + screenMode}>
+        <DayNight />
+
         <Switch>
           <Route exact path="/" render={() => <Home />} />
           <Route exact path="/research" render={() => <Research />} />
         </Switch>
-        <DayNight />
       </div>
     );
   }

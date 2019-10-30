@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/styles/SocialBar.css";
+import "../../assets/styles/Home/SocialBar.css";
 import { connect } from "react-redux";
 
 const SocialBar = ({ mode }) => {

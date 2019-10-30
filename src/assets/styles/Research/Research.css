@@ -1,0 +1,11 @@
+.hemocyte-image-container {
+  width: 80vw;
+  margin: auto;
+  position: relative;
+  height: 50vh;
+  display: flex;
+}
+.hemocyte-image {
+  width: 60%;
+  margin: 2em auto auto auto;
+}
