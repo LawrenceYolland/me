@@ -1,5 +1,6 @@
 .daynight-switch {
-  position: relative;
+  position: fixed;
+  bottom: 5em;
   display: inline-block;
   width: 4em;
   height: 4em;

@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-top: 5em;
 }
 
 .home-image-container {
@@ -12,6 +11,8 @@
   display: flex;
   width: 10em;
   height: 10em;
+  margin-top: 5em;
+
 }
 
 .home-image-container img {

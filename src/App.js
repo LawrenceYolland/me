@@ -8,16 +8,19 @@ import Research from "./components/Research/Research";
 import DayNight from "./components/DayNight";
 
 class App extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     const screenMode = this.props.mode ? "Dark" : "Light";
+
     return (
       <div className={"App" + " " + screenMode}>
-        <DayNight />
-        {/* <Home /> */}
         <Switch>
           <Route exact path="/" render={() => <Home />} />
           <Route exact path="/research" render={() => <Research />} />
         </Switch>
+        <DayNight />
       </div>
     );
   }
