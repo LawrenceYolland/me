@@ -1,22 +1,31 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { Route, Switch, withRouter } from "react-router-dom";
+
 import "./App.css";
-import Home from "./components/Views/Home";
-import Research from "./components/Views/Research";
 import "./assets/styles/Header.css";
 import "./assets/styles/Footer.css";
+import "./assets/styles/Research.css";
 
-import DayNight from "./components/DayNight";
-import SocialBar from "./components/SocialBar";
+// import DayNight from "./components/DayNight";
+// import SocialBar from "./components/SocialBar";
+
+import Home from "./components/Views/Home";
+import Research from "./components/Views/Research";
 import MenuBar from "./components/Header/MenuBar";
 import Menu from "./components/Header/Menu";
 
+import PropTypes from "prop-types";
+
 class App extends Component {
+  static propTypes = {
+    mode: PropTypes.bool.isRequired,
+    menu: PropTypes.bool.isRequired
+  };
+
   componentDidMount() {
     window.scrollTo(0, 0);
   }
-
 
   render() {
     const screenMode = this.props.mode ? "dark" : "light";
@@ -27,9 +36,7 @@ class App extends Component {
         <header>
           <Fragment>
             <MenuBar />
-            {!menu ? null : (
-              <Menu/>
-            )}
+            {!menu ? null : <Menu />}
           </Fragment>
         </header>
         <main>

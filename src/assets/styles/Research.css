@@ -1,0 +1,65 @@
+.post {
+  display: grid;
+  max-width: 1000px;
+  margin: 1.5em auto 0 auto;
+  grid-gap: 1.2em;
+  grid-template-columns: 1fr 12fr 1fr;
+
+  padding-bottom: 10em;
+}
+
+.post > * {
+  grid-column: 2/-2;
+
+  margin-top: 1px;
+  margin-bottom: 5px;
+}
+
+.post > h1 {
+  font-size: 3em;
+}
+
+.post > p {
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.post > figure {
+  margin: 0;
+  grid-column: 1/-1;
+}
+
+.post > figure > figcaption {
+  font-size: 1em;
+  padding-left: 5%;
+  font-style: italic;
+}
+
+.post > figure > img {
+  width: 100%;
+}
+
+.post > blockquote {
+  grid-column: 1/-1;
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+}
+
+.tip {
+  background: #fafafa;
+  padding: 10px;
+}
+
+.tip-right {
+  grid-column: span 1 / -1;
+  text-align: left;
+  border-left: 2px solid yellow;
+}
+
+.tip-left {
+  grid-column: 1 / span 1;
+  text-align: right;
+  border-right: 2px solid yellow;
+}

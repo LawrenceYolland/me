@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import Hemocyte from "../Research/Hemocyte";
+// import Hemocyte from "../Research/Hemocyte";
 import Read from "../Research/Read";
 
 export default class Research extends Component {
@@ -9,7 +9,7 @@ export default class Research extends Component {
   render() {
     return (
       <Fragment>
-        <Hemocyte />
+        {/* <Hemocyte /> */}
         <Read />
       </Fragment>
     );

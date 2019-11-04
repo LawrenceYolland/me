@@ -68,6 +68,9 @@ header {
   color: #e5e5e5;
   display: block;
   width: 80vw;
+
+  /* max-width: 600px; */
+
   margin: 0.2em auto 0.5em auto;
 
   font-size: 2em;
@@ -136,7 +139,8 @@ header {
 }
 
 .menu-social-icon-container {
-  width: fit-content;
+  /* width: fit-content; */
+  width: 80vw;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -149,6 +153,7 @@ header {
   text-align: center;
   height: 4em;
   width: 4em;
+  font-size: 1.5em;
 }
 
 .menu-social-icon > a {

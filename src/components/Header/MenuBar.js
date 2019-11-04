@@ -6,30 +6,38 @@ import { connect } from "react-redux";
 
 class MenuBar extends Component {
   static propTypes = {
-    setMenu: PropTypes.func.isRequired
+    setMenu: PropTypes.func.isRequired,
+    menu: PropTypes.bool.isRequired
   };
 
   render() {
-    const { setMenu, menu } = this.props;
-    const menuLogo = !menu ? (
-      <span className="icon-open" aria-label="Menu open">
-        &#9776;
-      </span>
-    ) : (
-      <span className="icon-closed" aria-label="Menu close">
-        &times;
-      </span>
-    );
+    const { setMenu } = this.props;
+    const menu = this.props.menu ? true : false;
+
     const menuItem = (
-      <a className="burger-menu" href="#" onClick={setMenu}>
-        {menuLogo}
-      </a>
+      <div className="burger-menu" onClick={setMenu}>
+        {!menu ? (
+          <span className="icon-open" aria-label="Menu open">
+            &#9776;
+          </span>
+        ) : (
+          <span className="icon-closed" aria-label="Menu close">
+            &times;
+          </span>
+        )}
+      </div>
     );
     return <div id="header-icon-container">{menuItem}</div>;
   }
 }
 
+const mapStateToProps = state => {
+  return {
+    menu: state.menu.menu
+  };
+};
+
 export default connect(
-  null,
+  mapStateToProps,
   { setMenu }
 )(MenuBar);

@@ -15,7 +15,7 @@ class Menu extends Component {
     const { setMenu } = this.props;
     return (
       <Fragment>
-        <div className="drop-menu-overlay"></div>
+        {/* <div className="drop-menu-overlay"></div> */}
         <div className="drop-menu">
           <div id="menu">
             <a className="menu-item" href="#" onClick={setMenu}>
