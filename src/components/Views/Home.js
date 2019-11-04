@@ -1,16 +1,16 @@
 import React, { Component, Fragment } from "react";
-import Hemocyte from "./Hemocyte";
-import Read from "./Read";
+import HomeCard from "../Home/HomeCard";
+// import SocialBar from "../SocialBar";
 
-export default class Research extends Component {
+export default class Home extends Component {
   componentDidMount() {
     window.scrollTo(0, 0);
   }
   render() {
     return (
       <Fragment>
-        <Hemocyte />
-        <Read />
+        <HomeCard />
+        {/* <SocialBar /> */}
       </Fragment>
     );
   }

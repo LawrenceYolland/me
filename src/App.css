@@ -1,52 +1,18 @@
-@media (min-width: 768px) {
-  .container-1 {
-    display: flex;
-  }
-}
+
 * {
   text-decoration: none;
 }
 
-.App {
+.app {
   min-height: 100vh;
-  margin: 0;
-  min-width: 100vw;
-  position: relative;
-  /* width: 100%; */
 }
 
-.App.Dark {
+.dark {
   background-color: #282c34;
   color: whitesmoke;
 }
 
-.App.Light {
+.light {
   background-color: whitesmoke;
   color: #282c34;
-}
-
-.container-1 div {
-  padding: 1rem;
-}
-
-.box-1 {
-  flex: 1;
-  order: 1;
-}
-
-.box-2 {
-  flex: 1;
-  order: 2;
-}
-
-.box-3 {
-  flex: 1;
-  order: 3;
-}
-
-div[class^="box-"] {
-  margin: 0.5em;
-  border-radius: 5px;
-  /* box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.1); */
-  text-align: center;
 }

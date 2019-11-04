@@ -12,14 +12,7 @@ class DayNight extends Component {
 
   render() {
     const { setMode } = this.props;
-    return (
-      <div className="modeswitch-container">
-        <label class="daynight-switch">
-          <input type="checkbox" onClick={setMode} />
-          <span class="daynight-slider round"></span>
-        </label>
-      </div>
-    );
+    return <input type="checkbox" onClick={setMode} />;
   }
 }
 

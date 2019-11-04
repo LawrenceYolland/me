@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import "../../assets/styles/Home/HomeCard.css";
+import "../../assets/styles/Home.css";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
 const HomeCard = ({ mode }) => {
   const screenMode = mode ? "Dark" : "Light";
   return (
-    <div className="home-container">
-      <div className="wrapper">
+    <section className="home-content-container">
         <div className="home-image-container">
           <img
             src={require("../../assets/images/headshot.jpg")}
@@ -29,8 +28,7 @@ const HomeCard = ({ mode }) => {
             here
           </Link>
         </p>
-      </div>
-    </div>
+    </section>
   );
 };
 

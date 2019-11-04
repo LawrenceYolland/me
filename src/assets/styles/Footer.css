@@ -1,13 +1,9 @@
 /* social bar */
 
-.social-content-container {
-  position: relative;
-  margin: 2em auto auto auto;
-}
 
 .social-bar {
   position: relative;
-  height: fit-content;
+
 }
 
 .social-icon-container {

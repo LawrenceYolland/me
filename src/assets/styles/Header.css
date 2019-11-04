@@ -1,0 +1,156 @@
+header {
+  min-height: 10vh;
+}
+
+#header-icon-container {
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  width: 100vw;
+  z-index: 999;
+  margin-top: 1em;
+  display: flex;
+}
+
+.burger-menu {
+  position: absolute;
+  right: 5%;
+}
+
+.icon-open {
+  font-size: 2.5em;
+  color: #a333c8;
+}
+
+.icon-closed {
+  font-size: 4em;
+  color: #a333c8;
+}
+
+.home-menu {
+  position: absolute;
+  left: 5%;
+}
+
+.drop-menu {
+  overflow-x: hidden;
+  position: fixed;
+  background-color: #e5e5e5;
+  z-index: 150;
+  width: 100vw;
+  height: 100vh;
+  align-content: center;
+  transition: 0.5s;
+  margin: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.drop-menu::-webkit-scrollbar {
+  width: 0;
+}
+
+#menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 15vh;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+#menu .menu-item {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #222;
+  color: #e5e5e5;
+  display: block;
+  width: 80vw;
+  margin: 0.2em auto 0.5em auto;
+
+  font-size: 2em;
+  font-weight: 500;
+  padding: 0.5em;
+  letter-spacing: 0.1em;
+  animation: fadeIn 1s linear forwards;
+}
+
+@keyframes slide-left-moji {
+  from {
+    transform: translateX(-2em) translateY(-1em) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-1em) translateY(-0.5em) scale(0.5);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right-moji {
+  from {
+    transform: translateX(2em) translateY(1em) scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(1em) translateY(0.5em) scale(0.5);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateX(0) translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+#menu a > span.left-moji {
+  position: absolute;
+  left: 10%;
+  font-size: 1.5em;
+  animation: slide-left-moji 0.5s linear;
+}
+
+#menu a > span.right-moji {
+  position: absolute;
+  right: 10%;
+  font-size: 1.5em;
+  animation: slide-right-moji 0.5s linear;
+}
+
+.social-block {
+  height: 5em;
+  width: 100vw;
+  margin-top: 5em;
+}
+
+.menu-social-bar {
+  width: fit-content;
+  height: 50%;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+.menu-social-icon-container {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.menu-social-icon {
+  text-align: center;
+  height: 4em;
+  width: 4em;
+}
+
+.menu-social-icon > a {
+  color: #222;
+}
