@@ -50,29 +50,31 @@ header {
 }
 
 #menu {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  top: 15vh;
+  display: grid;
+  max-width: 600px;
+  margin: 5em auto 0 auto;
+  gap: 1.2em;
+  grid-template-columns: 1fr 12fr 1fr;
+
+  padding-bottom: 10em;
+
   list-style: none;
   text-align: center;
-  width: 100%;
-  margin: auto;
-  padding: 0;
 }
 
+#menu > * {
+  grid-column: 2/-2;
+  /* grid-row-start: span 3; */
+  margin-top: 1px;
+  margin-bottom: 5px;
+}
+
+
 #menu .menu-item {
-  text-decoration: none;
   text-transform: uppercase;
   background-color: #222;
   color: #e5e5e5;
   display: block;
-  width: 80vw;
-
-  /* max-width: 600px; */
-
-  margin: 0.2em auto 0.5em auto;
-
   font-size: 2em;
   font-weight: 500;
   padding: 0.5em;
@@ -124,38 +126,4 @@ header {
   animation: slide-right-moji 0.5s linear;
 }
 
-.social-block {
-  height: 5em;
-  width: 100vw;
-  margin-top: 5em;
-}
-
-.menu-social-bar {
-  width: fit-content;
-  height: 50%;
-  margin: auto;
-  position: relative;
-  text-align: center;
-}
-
-.menu-social-icon-container {
-  /* width: fit-content; */
-  width: 80vw;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  height: fit-content;
-  justify-content: center;
-  vertical-align: middle;
-}
-
-.menu-social-icon {
-  text-align: center;
-  height: 4em;
-  width: 4em;
-  font-size: 1.5em;
-}
-
-.menu-social-icon > a {
-  color: #222;
-}
+/* social block */

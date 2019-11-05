@@ -10,6 +10,7 @@ class Menu extends Component {
   static propTypes = {
     setMenu: PropTypes.func.isRequired
   };
+
   render() {
     const { setMenu } = this.props;
     return (
@@ -18,22 +19,15 @@ class Menu extends Component {
           <div id="menu">
             <Link to="/" className="menu-item" onClick={setMenu}>
               Home
-              <span className="right-moji big-moji">👩‍🔬</span>
             </Link>
             <Link to="/research" className="menu-item" onClick={setMenu}>
               Research
-              <span className="left-moji">👋</span>
             </Link>
-
             <a className="menu-item" href="#" onClick={setMenu}>
               Resume
-              <span className="right-moji big-moji">👩‍🔬</span>
             </a>
-
-            <div className="social-block">
-              <MenuSocialBar />
-            </div>
           </div>
+          <MenuSocialBar />
         </div>
       </Fragment>
     );
