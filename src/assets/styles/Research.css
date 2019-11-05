@@ -2,7 +2,7 @@
   display: grid;
   max-width: 1000px;
   margin: 1.5em auto 0 auto;
-  grid-gap: 1.2em;
+  gap: 1.2em;
   grid-template-columns: 1fr 12fr 1fr;
 
   padding-bottom: 10em;

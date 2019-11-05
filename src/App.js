@@ -39,13 +39,11 @@ class App extends Component {
             {!menu ? null : <Menu />}
           </Fragment>
         </header>
-        <main>
           {/* <DayNight /> */}
           <Switch>
             <Route exact path="/" render={() => <Home />} />
             <Route exact path="/research" render={() => <Research />} />
           </Switch>
-        </main>
       </div>
     );
   }

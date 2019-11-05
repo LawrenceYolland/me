@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const HomeCard = ({ mode }) => {
   const screenMode = mode ? "Dark" : "Light";
   return (
-    <section className="home-content-container">
-      <div className="home-image-container">
+    <div className="home-wrapper">
+      <figure className="home-image-container">
         <img src={require("../../assets/images/headshot.jpg")} alt="headshot" />
-      </div>
+      </figure>
       <h1>Dr Lawrence Yolland</h1>
       <p>Hellooooo - I'm Lawrence!</p>
       <p>I'm a computational biologist 🔬 and full-stack developer 💻</p>
@@ -23,7 +23,7 @@ const HomeCard = ({ mode }) => {
           here
         </Link>
       </p>
-    </section>
+    </div>
   );
 };
 

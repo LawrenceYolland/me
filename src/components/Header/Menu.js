@@ -4,9 +4,8 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { setMenu } from "../../actions/menu";
-
 import MenuSocialBar from "./MenuSocialBar";
-
+import { Link } from "react-router-dom";
 class Menu extends Component {
   static propTypes = {
     setMenu: PropTypes.func.isRequired
@@ -15,17 +14,16 @@ class Menu extends Component {
     const { setMenu } = this.props;
     return (
       <Fragment>
-        {/* <div className="drop-menu-overlay"></div> */}
         <div className="drop-menu">
           <div id="menu">
-            <a className="menu-item" href="#" onClick={setMenu}>
+            <Link to="/" className="menu-item" onClick={setMenu}>
               Home
               <span className="right-moji big-moji">👩‍🔬</span>
-            </a>
-            <a className="menu-item" href="#" onClick={setMenu}>
+            </Link>
+            <Link to="/research" className="menu-item" onClick={setMenu}>
               Research
               <span className="left-moji">👋</span>
-            </a>
+            </Link>
 
             <a className="menu-item" href="#" onClick={setMenu}>
               Resume
